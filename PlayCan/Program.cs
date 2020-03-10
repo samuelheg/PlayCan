@@ -16,7 +16,25 @@ namespace PlayCan
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmAccueilUtilisateur());
+            frmConnexion.getFrmConnexion().ShowDialog();
+            if (frmConnexion.getFrmConnexion().role == 1)
+            {
+                frmAccueilUtilisateur accueil = frmAccueilUtilisateur.getFrmAccueilUtilisateur();
+                accueil.Hide();
+                Application.Run(accueil);
+            }
+            else if (frmConnexion.getFrmConnexion().role == 2)
+            {
+                frmAccueilAdmin accueil = frmAccueilAdmin.getFrmAccueilAdmin();
+                accueil.Hide();
+                Application.Run(accueil);
+            }
+            else {
+                
+            }
+
+
+
         }
     }
 }

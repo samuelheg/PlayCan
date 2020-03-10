@@ -45,16 +45,80 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ControllerPlayCan.cs" />
+    <Compile Include="frmAccueilAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAccueilAdmin.Designer.cs">
+      <DependentUpon>frmAccueilAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAPropos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAPropos.Designer.cs">
+      <DependentUpon>frmAPropos.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmAccueilUtilisateur.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmAccueilUtilisateur.Designer.cs">
       <DependentUpon>frmAccueilUtilisateur.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmConnexion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConnexion.Designer.cs">
+      <DependentUpon>frmConnexion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGestionAbonnements.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGestionAbonnements.Designer.cs">
+      <DependentUpon>frmGestionAbonnements.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGestionnaireMusique.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGestionnaireMusique.Designer.cs">
+      <DependentUpon>frmGestionnaireMusique.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmInscription.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInscription.Designer.cs">
+      <DependentUpon>frmInscription.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmParametres.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmParametres.Designer.cs">
+      <DependentUpon>frmParametres.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmAccueilAdmin.resx">
+      <DependentUpon>frmAccueilAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAPropos.resx">
+      <DependentUpon>frmAPropos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmAccueilUtilisateur.resx">
       <DependentUpon>frmAccueilUtilisateur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConnexion.resx">
+      <DependentUpon>frmConnexion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGestionAbonnements.resx">
+      <DependentUpon>frmGestionAbonnements.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGestionnaireMusique.resx">
+      <DependentUpon>frmGestionnaireMusique.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInscription.resx">
+      <DependentUpon>frmInscription.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmParametres.resx">
+      <DependentUpon>frmParametres.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -64,6 +128,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -77,6 +142,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\playcan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\635971302748323753-1586288398_EDM_Love.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ce868c383a77d7944c76424750921859.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sans titre - 1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

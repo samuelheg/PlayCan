@@ -10,57 +10,47 @@ using System.Windows.Forms;
 
 namespace PlayCan
 {
-    public partial class frmAccueilUtilisateur : Form
+    public partial class frmParametres : Form
     {
-        private static frmAccueilUtilisateur accueilUtilisateur;
+        private static frmParametres parametres;
         private ControllerPlayCan controller = new ControllerPlayCan();
-        private frmAccueilUtilisateur()
+        private frmParametres()
         {
             InitializeComponent();
         }
 
-        public static frmAccueilUtilisateur getFrmAccueilUtilisateur()
-        {
-            if (accueilUtilisateur == null) {
-                accueilUtilisateur = new frmAccueilUtilisateur();
+        public static frmParametres getFrmParametres() {
+            if (parametres == null) {
+                parametres = new frmParametres();
             }
-            return accueilUtilisateur;
+            return parametres;
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void label1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void pnlFormulaire_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void frmParametres_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            frmAccueilUtilisateur.getFrmAccueilUtilisateur().Show();
         }
 
         private void lblAccueil_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void label5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dtgMusiques_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void lblAccueil_Click_1(object sender, EventArgs e)
-        {
-
+            this.Close();
+            frmAccueilUtilisateur.getFrmAccueilUtilisateur().Show();
         }
 
         private void lblPlaylist_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void lblParametres_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            frmParametres.getFrmParametres().ShowDialog();
+            this.Close();
+            frmAccueilUtilisateur.getFrmAccueilUtilisateur().Show();
         }
 
         private void lblAPropos_Click(object sender, EventArgs e)
@@ -83,6 +73,12 @@ namespace PlayCan
         private void lbl_MouseLeave(object sender, EventArgs e)
         {
             controller.lbl_MouseLeave(sender, e);
+        }
+
+        private void lblFavoris_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            frmAccueilUtilisateur.getFrmAccueilUtilisateur().Show();
         }
     }
 }
