@@ -6,7 +6,7 @@ using System.Runtime.InteropServices;
 // l'ensemble d'attributs suivant. Changez les valeurs de ces attributs pour modifier les informations
 // associées à un assembly.
 [assembly: AssemblyTitle("PlayCan")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("PlayCan se veut un logiciel conçut pour rendre le pouvoir de la musique à ses utilisateurs. Développé par des passionés, pour des passionnés.")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("PlayCan")]

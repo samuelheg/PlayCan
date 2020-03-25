@@ -15,11 +15,11 @@ namespace PlayCan
         {
             InitializeComponent();
             this.Text = String.Format("À propos de {0}", AssemblyTitle);
-            this.labelProductName.Text = AssemblyProduct;
-            this.labelVersion.Text = String.Format("Version {0}", AssemblyVersion);
-            this.labelCopyright.Text = AssemblyCopyright;
-            this.labelCompanyName.Text = AssemblyCompany;
-            this.textBoxDescription.Text = AssemblyDescription;
+            this.lblProductName.Text = AssemblyProduct;
+            this.lblVersion.Text = String.Format("Version {0}", AssemblyVersion);
+            this.lblCopyright.Text = AssemblyCopyright;
+            this.lblCompanyName.Text = AssemblyCompany;
+            this.txtDescription.Text = AssemblyDescription;
         }
 
         #region Accesseurs d'attribut de l'assembly
@@ -110,6 +110,11 @@ namespace PlayCan
         private void labelVersion_Click(object sender, EventArgs e)
         {
   
+        }
+
+        private void okButton_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -10,22 +10,22 @@ using System.Windows.Forms;
 
 namespace PlayCan
 {
-    public partial class frmGestionAbonnements : Form
+    public partial class frmParametresAdmin : Form
     {
-        private static frmGestionAbonnements gestionAbonnements;
+        private static frmParametresAdmin parametres;
         private ControllerPlayCan controller = new ControllerPlayCan();
-
-        private frmGestionAbonnements()
+        private frmParametresAdmin()
         {
             InitializeComponent();
         }
-        public static frmGestionAbonnements getGestionnaireAbonnements()
+
+        public static frmParametresAdmin getFrmParametresAdmin()
         {
-            if (gestionAbonnements == null)
+            if (parametres == null)
             {
-                gestionAbonnements = new frmGestionAbonnements();
+                parametres = new frmParametresAdmin();
             }
-            return gestionAbonnements;
+            return parametres;
         }
 
         private void lblAccueil_Click(object sender, EventArgs e)
@@ -34,14 +34,10 @@ namespace PlayCan
             frmAccueilAdmin.getFrmAccueilAdmin().Show();
         }
 
-        private void lbl_MouseHover(object sender, EventArgs e)
+        private void lblAbonnements_Click(object sender, EventArgs e)
         {
-            controller.lbl_MouseHover(sender, e);
-        }
-
-        private void lbl_MouseLeave(object sender, EventArgs e)
-        {
-            controller.lbl_MouseLeave(sender, e);
+            this.Close();
+            frmGestionAbonnements.getGestionnaireAbonnements().Show();
         }
 
         private void lblMusique_Click(object sender, EventArgs e)
@@ -61,17 +57,24 @@ namespace PlayCan
             Application.Restart();
         }
 
-        private void lblParametres_Click(object sender, EventArgs e)
+        private void lbl_MouseHover(object sender, EventArgs e)
         {
-            this.Close();
-            frmParametresAdmin.getFrmParametresAdmin().Show();
+            controller.lbl_MouseHover(sender, e);
         }
 
-        private void lblAbonnements_Click(object sender, EventArgs e)
+        private void lbl_MouseLeave(object sender, EventArgs e)
+        {
+            controller.lbl_MouseLeave(sender, e);
+        }
+
+        private void pnlMenu_Paint(object sender, PaintEventArgs e)
         {
 
         }
 
-        private void frmGestionAbonnements_FormClosed(object sender, FormClosedEventArgs e) => gestionAbonnements = null;
+        private void frmParametresAdmin_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            parametres = null;
+        }
     }
 }

@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmGestionAbonnements));
-            this.picLogo = new System.Windows.Forms.PictureBox();
             this.lblDeconnexion = new System.Windows.Forms.Label();
             this.lblAPropos = new System.Windows.Forms.Label();
             this.lblParametres = new System.Windows.Forms.Label();
@@ -37,29 +36,20 @@
             this.lblAbonnements = new System.Windows.Forms.Label();
             this.lblAccueil = new System.Windows.Forms.Label();
             this.pnlLogo = new System.Windows.Forms.Panel();
+            this.picLogo = new System.Windows.Forms.PictureBox();
             this.pnlInfosMusique = new System.Windows.Forms.Panel();
             this.picFestival = new System.Windows.Forms.PictureBox();
             this.pnlMenu = new System.Windows.Forms.Panel();
             this.rbPayes = new System.Windows.Forms.RadioButton();
             this.rbImpayes = new System.Windows.Forms.RadioButton();
             this.dtgAbonnements = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
             this.pnlLogo.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
             this.pnlInfosMusique.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picFestival)).BeginInit();
             this.pnlMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgAbonnements)).BeginInit();
             this.SuspendLayout();
-            // 
-            // picLogo
-            // 
-            this.picLogo.Image = global::PlayCan.Properties.Resources.playcan;
-            this.picLogo.Location = new System.Drawing.Point(23, 22);
-            this.picLogo.Name = "picLogo";
-            this.picLogo.Size = new System.Drawing.Size(83, 97);
-            this.picLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picLogo.TabIndex = 2;
-            this.picLogo.TabStop = false;
             // 
             // lblDeconnexion
             // 
@@ -73,6 +63,7 @@
             this.lblDeconnexion.TabIndex = 5;
             this.lblDeconnexion.Text = "&Déconnexion";
             this.lblDeconnexion.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblDeconnexion.Click += new System.EventHandler(this.lblDeconnexion_Click);
             this.lblDeconnexion.MouseLeave += new System.EventHandler(this.lbl_MouseLeave);
             this.lblDeconnexion.MouseHover += new System.EventHandler(this.lbl_MouseHover);
             // 
@@ -88,6 +79,7 @@
             this.lblAPropos.TabIndex = 4;
             this.lblAPropos.Text = "A &Propos";
             this.lblAPropos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblAPropos.Click += new System.EventHandler(this.lblAPropos_Click);
             this.lblAPropos.MouseLeave += new System.EventHandler(this.lbl_MouseLeave);
             this.lblAPropos.MouseHover += new System.EventHandler(this.lbl_MouseHover);
             // 
@@ -103,6 +95,7 @@
             this.lblParametres.TabIndex = 3;
             this.lblParametres.Text = "Pa&ramètres";
             this.lblParametres.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblParametres.Click += new System.EventHandler(this.lblParametres_Click);
             this.lblParametres.MouseLeave += new System.EventHandler(this.lbl_MouseLeave);
             this.lblParametres.MouseHover += new System.EventHandler(this.lbl_MouseHover);
             // 
@@ -118,6 +111,7 @@
             this.lblMusique.TabIndex = 2;
             this.lblMusique.Text = "&Musiques";
             this.lblMusique.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblMusique.Click += new System.EventHandler(this.lblMusique_Click);
             this.lblMusique.MouseLeave += new System.EventHandler(this.lbl_MouseLeave);
             this.lblMusique.MouseHover += new System.EventHandler(this.lbl_MouseHover);
             // 
@@ -133,6 +127,7 @@
             this.lblAbonnements.TabIndex = 1;
             this.lblAbonnements.Text = "A&bonnements";
             this.lblAbonnements.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblAbonnements.Click += new System.EventHandler(this.lblAbonnements_Click);
             this.lblAbonnements.MouseLeave += new System.EventHandler(this.lbl_MouseLeave);
             this.lblAbonnements.MouseHover += new System.EventHandler(this.lbl_MouseHover);
             // 
@@ -160,6 +155,16 @@
             this.pnlLogo.Name = "pnlLogo";
             this.pnlLogo.Size = new System.Drawing.Size(129, 122);
             this.pnlLogo.TabIndex = 1;
+            // 
+            // picLogo
+            // 
+            this.picLogo.Image = global::PlayCan.Properties.Resources.playcan;
+            this.picLogo.Location = new System.Drawing.Point(23, 22);
+            this.picLogo.Name = "picLogo";
+            this.picLogo.Size = new System.Drawing.Size(83, 97);
+            this.picLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picLogo.TabIndex = 2;
+            this.picLogo.TabStop = false;
             // 
             // pnlInfosMusique
             // 
@@ -215,8 +220,6 @@
             this.rbPayes.TabStop = true;
             this.rbPayes.Text = "Pa&yés";
             this.rbPayes.UseVisualStyleBackColor = true;
-            this.rbPayes.MouseLeave += new System.EventHandler(this.lbl_MouseLeave);
-            this.rbPayes.MouseHover += new System.EventHandler(this.lbl_MouseHover);
             // 
             // rbImpayes
             // 
@@ -230,8 +233,6 @@
             this.rbImpayes.TabStop = true;
             this.rbImpayes.Text = "&Impayés";
             this.rbImpayes.UseVisualStyleBackColor = true;
-            this.rbImpayes.MouseLeave += new System.EventHandler(this.lbl_MouseLeave);
-            this.rbImpayes.MouseHover += new System.EventHandler(this.lbl_MouseHover);
             // 
             // dtgAbonnements
             // 
@@ -257,9 +258,11 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MinimumSize = new System.Drawing.Size(932, 562);
             this.Name = "frmGestionAbonnements";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Abonnements";
-            ((System.ComponentModel.ISupportInitialize)(this.picLogo)).EndInit();
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmGestionAbonnements_FormClosed);
             this.pnlLogo.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.picLogo)).EndInit();
             this.pnlInfosMusique.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.picFestival)).EndInit();
             this.pnlMenu.ResumeLayout(false);

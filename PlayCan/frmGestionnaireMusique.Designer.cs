@@ -36,20 +36,20 @@
             this.lblAbonnements = new System.Windows.Forms.Label();
             this.lblAccueil = new System.Windows.Forms.Label();
             this.pnlLogo = new System.Windows.Forms.Panel();
-            this.picLogo = new System.Windows.Forms.PictureBox();
             this.pnlInfosMusique = new System.Windows.Forms.Panel();
-            this.picFestival = new System.Windows.Forms.PictureBox();
             this.pnlMenu = new System.Windows.Forms.Panel();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.rbPayes = new System.Windows.Forms.RadioButton();
             this.rbStandard = new System.Windows.Forms.RadioButton();
             this.dtgMusiques = new System.Windows.Forms.DataGridView();
+            this.picFestival = new System.Windows.Forms.PictureBox();
+            this.picLogo = new System.Windows.Forms.PictureBox();
             this.pnlLogo.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
             this.pnlInfosMusique.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picFestival)).BeginInit();
             this.pnlMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgMusiques)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picFestival)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
             this.SuspendLayout();
             // 
             // lblDeconnexion
@@ -157,16 +157,6 @@
             this.pnlLogo.Size = new System.Drawing.Size(129, 122);
             this.pnlLogo.TabIndex = 1;
             // 
-            // picLogo
-            // 
-            this.picLogo.Image = global::PlayCan.Properties.Resources.playcan;
-            this.picLogo.Location = new System.Drawing.Point(23, 22);
-            this.picLogo.Name = "picLogo";
-            this.picLogo.Size = new System.Drawing.Size(83, 97);
-            this.picLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picLogo.TabIndex = 2;
-            this.picLogo.TabStop = false;
-            // 
             // pnlInfosMusique
             // 
             this.pnlInfosMusique.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -177,18 +167,6 @@
             this.pnlInfosMusique.Name = "pnlInfosMusique";
             this.pnlInfosMusique.Size = new System.Drawing.Size(709, 111);
             this.pnlInfosMusique.TabIndex = 19;
-            // 
-            // picFestival
-            // 
-            this.picFestival.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.picFestival.Image = global::PlayCan.Properties.Resources.Sans_titre___1;
-            this.picFestival.Location = new System.Drawing.Point(0, 0);
-            this.picFestival.Name = "picFestival";
-            this.picFestival.Size = new System.Drawing.Size(709, 108);
-            this.picFestival.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picFestival.TabIndex = 0;
-            this.picFestival.TabStop = false;
             // 
             // pnlMenu
             // 
@@ -209,6 +187,7 @@
             this.pnlMenu.Name = "pnlMenu";
             this.pnlMenu.Size = new System.Drawing.Size(200, 554);
             this.pnlMenu.TabIndex = 20;
+            this.pnlMenu.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlMenu_Paint);
             // 
             // radioButton1
             // 
@@ -222,8 +201,6 @@
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "Delu&xe";
             this.radioButton1.UseVisualStyleBackColor = true;
-            this.radioButton1.MouseLeave += new System.EventHandler(this.lbl_MouseLeave);
-            this.radioButton1.MouseHover += new System.EventHandler(this.lbl_MouseHover);
             // 
             // rbPayes
             // 
@@ -237,8 +214,6 @@
             this.rbPayes.TabStop = true;
             this.rbPayes.Text = "Pr&emium";
             this.rbPayes.UseVisualStyleBackColor = true;
-            this.rbPayes.MouseLeave += new System.EventHandler(this.lbl_MouseLeave);
-            this.rbPayes.MouseHover += new System.EventHandler(this.lbl_MouseHover);
             // 
             // rbStandard
             // 
@@ -253,8 +228,6 @@
             this.rbStandard.Text = "&Standard";
             this.rbStandard.UseVisualStyleBackColor = true;
             this.rbStandard.CheckedChanged += new System.EventHandler(this.rbImpayes_CheckedChanged);
-            this.rbStandard.MouseLeave += new System.EventHandler(this.lbl_MouseLeave);
-            this.rbStandard.MouseHover += new System.EventHandler(this.lbl_MouseHover);
             // 
             // dtgMusiques
             // 
@@ -268,6 +241,28 @@
             this.dtgMusiques.Size = new System.Drawing.Size(709, 404);
             this.dtgMusiques.TabIndex = 18;
             // 
+            // picFestival
+            // 
+            this.picFestival.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.picFestival.Image = global::PlayCan.Properties.Resources.Sans_titre___1;
+            this.picFestival.Location = new System.Drawing.Point(0, 0);
+            this.picFestival.Name = "picFestival";
+            this.picFestival.Size = new System.Drawing.Size(709, 108);
+            this.picFestival.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picFestival.TabIndex = 0;
+            this.picFestival.TabStop = false;
+            // 
+            // picLogo
+            // 
+            this.picLogo.Image = global::PlayCan.Properties.Resources.playcan;
+            this.picLogo.Location = new System.Drawing.Point(23, 22);
+            this.picLogo.Name = "picLogo";
+            this.picLogo.Size = new System.Drawing.Size(83, 97);
+            this.picLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picLogo.TabIndex = 2;
+            this.picLogo.TabStop = false;
+            // 
             // frmGestionnaireMusique
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -280,14 +275,16 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MinimumSize = new System.Drawing.Size(932, 562);
             this.Name = "frmGestionnaireMusique";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Musique";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmGestionnaireMusique_FormClosed);
             this.pnlLogo.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.picLogo)).EndInit();
             this.pnlInfosMusique.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.picFestival)).EndInit();
             this.pnlMenu.ResumeLayout(false);
             this.pnlMenu.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgMusiques)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picFestival)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picLogo)).EndInit();
             this.ResumeLayout(false);
 
         }

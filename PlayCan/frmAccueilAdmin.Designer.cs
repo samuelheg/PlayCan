@@ -392,6 +392,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MinimumSize = new System.Drawing.Size(932, 562);
             this.Name = "frmAccueilAdmin";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Accueil";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmAccueilAdmin_FormClosed);
             this.Load += new System.EventHandler(this.frmAccueilAdmin_Load);

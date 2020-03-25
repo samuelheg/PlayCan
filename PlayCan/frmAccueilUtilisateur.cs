@@ -71,8 +71,9 @@ namespace PlayCan
 
         private void lblDeconnexion_Click(object sender, EventArgs e)
         {
-            this.Close();
-            frmConnexion.getFrmConnexion().Show();
+            //this.Close();
+            //frmConnexion.getFrmConnexion().Show();
+            Application.Restart();
         }
 
         private void lbl_MouseHover(object sender, EventArgs e)

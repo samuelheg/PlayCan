@@ -35,8 +35,7 @@ namespace PlayCan
 
         private void lblDeconnexion_Click(object sender, EventArgs e)
         {
-            this.Close();
-            frmConnexion.getFrmConnexion().Show();
+            Application.Restart();
         }
 
         private void lbl_MouseHover(object sender, EventArgs e)
@@ -68,13 +67,24 @@ namespace PlayCan
 
         private void lblParametres_Click(object sender, EventArgs e)
         {
-
+            this.Close();
+            frmParametresAdmin.getFrmParametresAdmin().Show();
         }
 
         private void lblAPropos_Click(object sender, EventArgs e)
         {
             frmAPropos aPropos = new frmAPropos();
             aPropos.ShowDialog();
+        }
+
+        private void pnlMenu_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void frmGestionnaireMusique_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            gestionMusique = null;
         }
     }
 }

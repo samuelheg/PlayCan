@@ -54,13 +54,12 @@ namespace PlayCan
 
         private void frmAccueilAdmin_FormClosed(object sender, FormClosedEventArgs e)
         {
-
+            accueilAdmin = null;
         }
 
         private void lblDeconnexion_Click(object sender, EventArgs e)
         {
-            this.Close();
-            frmConnexion.getFrmConnexion().Show();
+            Application.Restart();
         }
 
         private void lbl_MouseHover(object sender, EventArgs e)
@@ -92,7 +91,8 @@ namespace PlayCan
 
         private void lblParametres_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            frmParametresAdmin.getFrmParametresAdmin().Show();
         }
 
         private void lblAPropos_Click(object sender, EventArgs e)

@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAccueilUtilisateur));
             this.pnlInfosMusique = new System.Windows.Forms.Panel();
             this.picFestival = new System.Windows.Forms.PictureBox();
@@ -45,6 +47,11 @@
             this.pnlLogo = new System.Windows.Forms.Panel();
             this.picLogo = new System.Windows.Forms.PictureBox();
             this.dtgMusiques = new System.Windows.Forms.DataGridView();
+            this.Etat = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Favoris = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Titre = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Durée = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Options = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pnlInfosMusique.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picFestival)).BeginInit();
             this.pnlMenu.SuspendLayout();
@@ -268,12 +275,60 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dtgMusiques.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.dtgMusiques.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgMusiques.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dtgMusiques.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.dtgMusiques.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Etat,
+            this.Favoris,
+            this.Titre,
+            this.Durée,
+            this.Options});
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.NullValue = null;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dtgMusiques.DefaultCellStyle = dataGridViewCellStyle2;
             this.dtgMusiques.Location = new System.Drawing.Point(203, 112);
             this.dtgMusiques.Name = "dtgMusiques";
             this.dtgMusiques.Size = new System.Drawing.Size(709, 404);
             this.dtgMusiques.TabIndex = 3;
             this.dtgMusiques.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgMusiques_CellContentClick);
+            // 
+            // Etat
+            // 
+            this.Etat.HeaderText = "Etat";
+            this.Etat.Name = "Etat";
+            // 
+            // Favoris
+            // 
+            this.Favoris.HeaderText = "Favoris";
+            this.Favoris.Name = "Favoris";
+            // 
+            // Titre
+            // 
+            this.Titre.HeaderText = "Titre";
+            this.Titre.Name = "Titre";
+            // 
+            // Durée
+            // 
+            this.Durée.HeaderText = "Durée";
+            this.Durée.Name = "Durée";
+            // 
+            // Options
+            // 
+            this.Options.HeaderText = "Options";
+            this.Options.Name = "Options";
             // 
             // frmAccueilUtilisateur
             // 
@@ -320,6 +375,11 @@
         private System.Windows.Forms.Label lblFavoris;
         private System.Windows.Forms.Label lblPlaylist;
         private System.Windows.Forms.Label lblAccueil;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Etat;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Favoris;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Titre;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Durée;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Options;
     }
 }
 

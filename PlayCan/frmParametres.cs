@@ -61,8 +61,7 @@ namespace PlayCan
 
         private void lblDeconnexion_Click(object sender, EventArgs e)
         {
-            this.Close();
-            frmConnexion.getFrmConnexion().Show();
+            Application.Restart();
         }
 
         private void lbl_MouseHover(object sender, EventArgs e)
@@ -79,6 +78,11 @@ namespace PlayCan
         {
             this.Close();
             frmAccueilUtilisateur.getFrmAccueilUtilisateur().Show();
+        }
+
+        private void pnlMenu_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
