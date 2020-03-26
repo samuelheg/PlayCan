@@ -43,6 +43,8 @@
             this.rbPayes = new System.Windows.Forms.RadioButton();
             this.rbImpayes = new System.Windows.Forms.RadioButton();
             this.dtgAbonnements = new System.Windows.Forms.DataGridView();
+            this.lblRecherche = new System.Windows.Forms.Label();
+            this.tbxId = new System.Windows.Forms.TextBox();
             this.pnlLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
             this.pnlInfosMusique.SuspendLayout();
@@ -171,6 +173,8 @@
             this.pnlInfosMusique.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pnlInfosMusique.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.pnlInfosMusique.Controls.Add(this.lblRecherche);
+            this.pnlInfosMusique.Controls.Add(this.tbxId);
             this.pnlInfosMusique.Controls.Add(this.picFestival);
             this.pnlInfosMusique.Location = new System.Drawing.Point(203, -2);
             this.pnlInfosMusique.Name = "pnlInfosMusique";
@@ -245,6 +249,34 @@
             this.dtgAbonnements.Name = "dtgAbonnements";
             this.dtgAbonnements.Size = new System.Drawing.Size(709, 404);
             this.dtgAbonnements.TabIndex = 0;
+            this.dtgAbonnements.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgAbonnements_CellContentClick);
+            // 
+            // lblRecherche
+            // 
+            this.lblRecherche.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblRecherche.AutoSize = true;
+            this.lblRecherche.BackColor = System.Drawing.Color.Transparent;
+            this.lblRecherche.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRecherche.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.lblRecherche.Location = new System.Drawing.Point(2, 86);
+            this.lblRecherche.Name = "lblRecherche";
+            this.lblRecherche.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblRecherche.Size = new System.Drawing.Size(73, 18);
+            this.lblRecherche.TabIndex = 0;
+            this.lblRecherche.Text = "&Recherche";
+            this.lblRecherche.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // tbxId
+            // 
+            this.tbxId.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tbxId.Location = new System.Drawing.Point(97, 86);
+            this.tbxId.Name = "tbxId";
+            this.tbxId.Size = new System.Drawing.Size(153, 20);
+            this.tbxId.TabIndex = 1;
             // 
             // frmGestionAbonnements
             // 
@@ -264,6 +296,7 @@
             this.pnlLogo.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).EndInit();
             this.pnlInfosMusique.ResumeLayout(false);
+            this.pnlInfosMusique.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picFestival)).EndInit();
             this.pnlMenu.ResumeLayout(false);
             this.pnlMenu.PerformLayout();
@@ -288,5 +321,7 @@
         private System.Windows.Forms.DataGridView dtgAbonnements;
         private System.Windows.Forms.RadioButton rbPayes;
         private System.Windows.Forms.RadioButton rbImpayes;
+        private System.Windows.Forms.Label lblRecherche;
+        private System.Windows.Forms.TextBox tbxId;
     }
 }

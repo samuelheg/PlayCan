@@ -51,12 +51,14 @@ namespace PlayCan
         private void lblAccueil_Click(object sender, EventArgs e)
         {
             this.Close();
-            frmAccueilAdmin.getFrmAccueilAdmin().Show();
+
+
         }
 
         private void lblAbonnements_Click(object sender, EventArgs e)
         {
-            this.Close();
+            gestionMusique = null;
+            this.Dispose();
             frmGestionAbonnements.getGestionnaireAbonnements().Show();
         }
 
@@ -67,7 +69,8 @@ namespace PlayCan
 
         private void lblParametres_Click(object sender, EventArgs e)
         {
-            this.Close();
+            gestionMusique = null;
+            this.Dispose();
             frmParametresAdmin.getFrmParametresAdmin().Show();
         }
 
@@ -85,6 +88,12 @@ namespace PlayCan
         private void frmGestionnaireMusique_FormClosed(object sender, FormClosedEventArgs e)
         {
             gestionMusique = null;
+            frmAccueilAdmin.getFrmAccueilAdmin().Show();
+        }
+
+        private void dtgMusiques_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

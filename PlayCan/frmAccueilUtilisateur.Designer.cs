@@ -47,11 +47,8 @@
             this.pnlLogo = new System.Windows.Forms.Panel();
             this.picLogo = new System.Windows.Forms.PictureBox();
             this.dtgMusiques = new System.Windows.Forms.DataGridView();
-            this.Etat = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Favoris = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Titre = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Durée = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Options = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lblRecherche = new System.Windows.Forms.Label();
+            this.tbxId = new System.Windows.Forms.TextBox();
             this.pnlInfosMusique.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picFestival)).BeginInit();
             this.pnlMenu.SuspendLayout();
@@ -66,6 +63,8 @@
             this.pnlInfosMusique.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pnlInfosMusique.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.pnlInfosMusique.Controls.Add(this.lblRecherche);
+            this.pnlInfosMusique.Controls.Add(this.tbxId);
             this.pnlInfosMusique.Controls.Add(this.picFestival);
             this.pnlInfosMusique.Location = new System.Drawing.Point(203, -2);
             this.pnlInfosMusique.Name = "pnlInfosMusique";
@@ -221,7 +220,7 @@
             this.lblPrecedent.Location = new System.Drawing.Point(22, 413);
             this.lblPrecedent.Name = "lblPrecedent";
             this.lblPrecedent.Size = new System.Drawing.Size(43, 30);
-            this.lblPrecedent.TabIndex = 7;
+            this.lblPrecedent.TabIndex = 6;
             this.lblPrecedent.Text = "&7";
             this.lblPrecedent.MouseLeave += new System.EventHandler(this.lbl_MouseLeave);
             this.lblPrecedent.MouseHover += new System.EventHandler(this.lbl_MouseHover);
@@ -234,7 +233,7 @@
             this.lblPlay.Location = new System.Drawing.Point(65, 398);
             this.lblPlay.Name = "lblPlay";
             this.lblPlay.Size = new System.Drawing.Size(71, 49);
-            this.lblPlay.TabIndex = 6;
+            this.lblPlay.TabIndex = 7;
             this.lblPlay.Text = "&4";
             this.lblPlay.Click += new System.EventHandler(this.label5_Click);
             this.lblPlay.MouseLeave += new System.EventHandler(this.lbl_MouseLeave);
@@ -284,12 +283,6 @@
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dtgMusiques.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dtgMusiques.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            this.dtgMusiques.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Etat,
-            this.Favoris,
-            this.Titre,
-            this.Durée,
-            this.Options});
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -302,33 +295,35 @@
             this.dtgMusiques.Location = new System.Drawing.Point(203, 112);
             this.dtgMusiques.Name = "dtgMusiques";
             this.dtgMusiques.Size = new System.Drawing.Size(709, 404);
-            this.dtgMusiques.TabIndex = 3;
+            this.dtgMusiques.TabIndex = 0;
             this.dtgMusiques.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgMusiques_CellContentClick);
             // 
-            // Etat
+            // lblRecherche
             // 
-            this.Etat.HeaderText = "Etat";
-            this.Etat.Name = "Etat";
+            this.lblRecherche.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblRecherche.AutoSize = true;
+            this.lblRecherche.BackColor = System.Drawing.Color.Transparent;
+            this.lblRecherche.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRecherche.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.lblRecherche.Location = new System.Drawing.Point(2, 86);
+            this.lblRecherche.Name = "lblRecherche";
+            this.lblRecherche.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblRecherche.Size = new System.Drawing.Size(73, 18);
+            this.lblRecherche.TabIndex = 0;
+            this.lblRecherche.Text = "&Recherche";
+            this.lblRecherche.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // Favoris
+            // tbxId
             // 
-            this.Favoris.HeaderText = "Favoris";
-            this.Favoris.Name = "Favoris";
-            // 
-            // Titre
-            // 
-            this.Titre.HeaderText = "Titre";
-            this.Titre.Name = "Titre";
-            // 
-            // Durée
-            // 
-            this.Durée.HeaderText = "Durée";
-            this.Durée.Name = "Durée";
-            // 
-            // Options
-            // 
-            this.Options.HeaderText = "Options";
-            this.Options.Name = "Options";
+            this.tbxId.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tbxId.Location = new System.Drawing.Point(97, 86);
+            this.tbxId.Name = "tbxId";
+            this.tbxId.Size = new System.Drawing.Size(153, 20);
+            this.tbxId.TabIndex = 1;
             // 
             // frmAccueilUtilisateur
             // 
@@ -346,6 +341,7 @@
             this.Text = "Accueil";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.pnlInfosMusique.ResumeLayout(false);
+            this.pnlInfosMusique.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picFestival)).EndInit();
             this.pnlMenu.ResumeLayout(false);
             this.pnlMenu.PerformLayout();
@@ -375,11 +371,8 @@
         private System.Windows.Forms.Label lblFavoris;
         private System.Windows.Forms.Label lblPlaylist;
         private System.Windows.Forms.Label lblAccueil;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Etat;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Favoris;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Titre;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Durée;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Options;
+        private System.Windows.Forms.Label lblRecherche;
+        private System.Windows.Forms.TextBox tbxId;
     }
 }
 

@@ -36,20 +36,22 @@
             this.lblAbonnements = new System.Windows.Forms.Label();
             this.lblAccueil = new System.Windows.Forms.Label();
             this.pnlLogo = new System.Windows.Forms.Panel();
+            this.picLogo = new System.Windows.Forms.PictureBox();
             this.pnlInfosMusique = new System.Windows.Forms.Panel();
+            this.picFestival = new System.Windows.Forms.PictureBox();
             this.pnlMenu = new System.Windows.Forms.Panel();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.rbPayes = new System.Windows.Forms.RadioButton();
             this.rbStandard = new System.Windows.Forms.RadioButton();
             this.dtgMusiques = new System.Windows.Forms.DataGridView();
-            this.picFestival = new System.Windows.Forms.PictureBox();
-            this.picLogo = new System.Windows.Forms.PictureBox();
+            this.lblRecherche = new System.Windows.Forms.Label();
+            this.tbxId = new System.Windows.Forms.TextBox();
             this.pnlLogo.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
             this.pnlInfosMusique.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picFestival)).BeginInit();
             this.pnlMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgMusiques)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picFestival)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
             this.SuspendLayout();
             // 
             // lblDeconnexion
@@ -157,16 +159,40 @@
             this.pnlLogo.Size = new System.Drawing.Size(129, 122);
             this.pnlLogo.TabIndex = 1;
             // 
+            // picLogo
+            // 
+            this.picLogo.Image = global::PlayCan.Properties.Resources.playcan;
+            this.picLogo.Location = new System.Drawing.Point(23, 22);
+            this.picLogo.Name = "picLogo";
+            this.picLogo.Size = new System.Drawing.Size(83, 97);
+            this.picLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picLogo.TabIndex = 2;
+            this.picLogo.TabStop = false;
+            // 
             // pnlInfosMusique
             // 
             this.pnlInfosMusique.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pnlInfosMusique.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.pnlInfosMusique.Controls.Add(this.lblRecherche);
+            this.pnlInfosMusique.Controls.Add(this.tbxId);
             this.pnlInfosMusique.Controls.Add(this.picFestival);
             this.pnlInfosMusique.Location = new System.Drawing.Point(203, -2);
             this.pnlInfosMusique.Name = "pnlInfosMusique";
             this.pnlInfosMusique.Size = new System.Drawing.Size(709, 111);
             this.pnlInfosMusique.TabIndex = 19;
+            // 
+            // picFestival
+            // 
+            this.picFestival.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.picFestival.Image = global::PlayCan.Properties.Resources.Sans_titre___1;
+            this.picFestival.Location = new System.Drawing.Point(0, 0);
+            this.picFestival.Name = "picFestival";
+            this.picFestival.Size = new System.Drawing.Size(709, 108);
+            this.picFestival.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picFestival.TabIndex = 0;
+            this.picFestival.TabStop = false;
             // 
             // pnlMenu
             // 
@@ -240,28 +266,34 @@
             this.dtgMusiques.Name = "dtgMusiques";
             this.dtgMusiques.Size = new System.Drawing.Size(709, 404);
             this.dtgMusiques.TabIndex = 18;
+            this.dtgMusiques.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgMusiques_CellContentClick);
             // 
-            // picFestival
+            // lblRecherche
             // 
-            this.picFestival.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.lblRecherche.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.picFestival.Image = global::PlayCan.Properties.Resources.Sans_titre___1;
-            this.picFestival.Location = new System.Drawing.Point(0, 0);
-            this.picFestival.Name = "picFestival";
-            this.picFestival.Size = new System.Drawing.Size(709, 108);
-            this.picFestival.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picFestival.TabIndex = 0;
-            this.picFestival.TabStop = false;
+            this.lblRecherche.AutoSize = true;
+            this.lblRecherche.BackColor = System.Drawing.Color.Transparent;
+            this.lblRecherche.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRecherche.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.lblRecherche.Location = new System.Drawing.Point(2, 86);
+            this.lblRecherche.Name = "lblRecherche";
+            this.lblRecherche.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblRecherche.Size = new System.Drawing.Size(73, 18);
+            this.lblRecherche.TabIndex = 0;
+            this.lblRecherche.Text = "&Recherche";
+            this.lblRecherche.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // picLogo
+            // tbxId
             // 
-            this.picLogo.Image = global::PlayCan.Properties.Resources.playcan;
-            this.picLogo.Location = new System.Drawing.Point(23, 22);
-            this.picLogo.Name = "picLogo";
-            this.picLogo.Size = new System.Drawing.Size(83, 97);
-            this.picLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picLogo.TabIndex = 2;
-            this.picLogo.TabStop = false;
+            this.tbxId.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tbxId.Location = new System.Drawing.Point(97, 86);
+            this.tbxId.Name = "tbxId";
+            this.tbxId.Size = new System.Drawing.Size(153, 20);
+            this.tbxId.TabIndex = 1;
             // 
             // frmGestionnaireMusique
             // 
@@ -279,12 +311,13 @@
             this.Text = "Musique";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmGestionnaireMusique_FormClosed);
             this.pnlLogo.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.picLogo)).EndInit();
             this.pnlInfosMusique.ResumeLayout(false);
+            this.pnlInfosMusique.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picFestival)).EndInit();
             this.pnlMenu.ResumeLayout(false);
             this.pnlMenu.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgMusiques)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picFestival)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picLogo)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -306,5 +339,7 @@
         private System.Windows.Forms.RadioButton rbStandard;
         private System.Windows.Forms.DataGridView dtgMusiques;
         private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.Label lblRecherche;
+        private System.Windows.Forms.TextBox tbxId;
     }
 }

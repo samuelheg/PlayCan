@@ -41,39 +41,39 @@
             this.lblPlaylist = new System.Windows.Forms.Label();
             this.lblAccueil = new System.Windows.Forms.Label();
             this.pnlLogo = new System.Windows.Forms.Panel();
+            this.picLogo = new System.Windows.Forms.PictureBox();
             this.pnlInfosMusique = new System.Windows.Forms.Panel();
+            this.picFestival = new System.Windows.Forms.PictureBox();
             this.pnlFormulaire = new System.Windows.Forms.Panel();
-            this.tbxNomFactu = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.lblNom = new System.Windows.Forms.Label();
-            this.lblId = new System.Windows.Forms.Label();
-            this.lblPrenom = new System.Windows.Forms.Label();
             this.lblMdp = new System.Windows.Forms.Label();
             this.lblConfMdp = new System.Windows.Forms.Label();
+            this.lblId = new System.Windows.Forms.Label();
+            this.lblPrenom = new System.Windows.Forms.Label();
+            this.lblNom = new System.Windows.Forms.Label();
+            this.tbxId = new System.Windows.Forms.TextBox();
+            this.tbxAdresseFactu = new System.Windows.Forms.TextBox();
+            this.tbxConfMdp = new System.Windows.Forms.TextBox();
+            this.tbxPrenom = new System.Windows.Forms.TextBox();
+            this.tbxMdp = new System.Windows.Forms.TextBox();
+            this.tbxNom = new System.Windows.Forms.TextBox();
+            this.tbxNomFactu = new System.Windows.Forms.TextBox();
+            this.lblInfosAbo = new System.Windows.Forms.Label();
+            this.lblAdresse = new System.Windows.Forms.Label();
+            this.lblAbo = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.lblInfosAbo = new System.Windows.Forms.Label();
             this.rbDeluxe = new System.Windows.Forms.RadioButton();
             this.rbPremium = new System.Windows.Forms.RadioButton();
             this.rbStandard = new System.Windows.Forms.RadioButton();
-            this.lblAdresse = new System.Windows.Forms.Label();
-            this.tbxAdresseFactu = new System.Windows.Forms.TextBox();
-            this.lblAbo = new System.Windows.Forms.Label();
-            this.tbxConfMdp = new System.Windows.Forms.TextBox();
-            this.tbxMdp = new System.Windows.Forms.TextBox();
-            this.tbxPrenom = new System.Windows.Forms.TextBox();
-            this.tbxId = new System.Windows.Forms.TextBox();
-            this.tbxNom = new System.Windows.Forms.TextBox();
             this.btnUpdate = new System.Windows.Forms.Button();
-            this.picLogo = new System.Windows.Forms.PictureBox();
-            this.picFestival = new System.Windows.Forms.PictureBox();
             this.pnlMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgInfosMusiques)).BeginInit();
             this.pnlLogo.SuspendLayout();
-            this.pnlInfosMusique.SuspendLayout();
-            this.pnlFormulaire.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
+            this.pnlInfosMusique.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picFestival)).BeginInit();
+            this.pnlFormulaire.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlMenu
@@ -251,6 +251,16 @@
             this.pnlLogo.Size = new System.Drawing.Size(129, 122);
             this.pnlLogo.TabIndex = 1;
             // 
+            // picLogo
+            // 
+            this.picLogo.Image = global::PlayCan.Properties.Resources.playcan;
+            this.picLogo.Location = new System.Drawing.Point(23, 22);
+            this.picLogo.Name = "picLogo";
+            this.picLogo.Size = new System.Drawing.Size(83, 97);
+            this.picLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picLogo.TabIndex = 2;
+            this.picLogo.TabStop = false;
+            // 
             // pnlInfosMusique
             // 
             this.pnlInfosMusique.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -262,31 +272,51 @@
             this.pnlInfosMusique.Size = new System.Drawing.Size(709, 111);
             this.pnlInfosMusique.TabIndex = 4;
             // 
+            // picFestival
+            // 
+            this.picFestival.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.picFestival.Image = global::PlayCan.Properties.Resources.Sans_titre___1;
+            this.picFestival.Location = new System.Drawing.Point(0, 0);
+            this.picFestival.Name = "picFestival";
+            this.picFestival.Size = new System.Drawing.Size(709, 108);
+            this.picFestival.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picFestival.TabIndex = 0;
+            this.picFestival.TabStop = false;
+            // 
             // pnlFormulaire
             // 
+            this.pnlFormulaire.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.pnlFormulaire.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.pnlFormulaire.Controls.Add(this.tbxNomFactu);
-            this.pnlFormulaire.Controls.Add(this.label5);
+            this.pnlFormulaire.Controls.Add(this.label2);
+            this.pnlFormulaire.Controls.Add(this.lblInfosAbo);
+            this.pnlFormulaire.Controls.Add(this.label1);
+            this.pnlFormulaire.Controls.Add(this.tbxId);
+            this.pnlFormulaire.Controls.Add(this.rbDeluxe);
+            this.pnlFormulaire.Controls.Add(this.lblAdresse);
+            this.pnlFormulaire.Controls.Add(this.rbPremium);
             this.pnlFormulaire.Controls.Add(this.lblNom);
-            this.pnlFormulaire.Controls.Add(this.lblId);
+            this.pnlFormulaire.Controls.Add(this.rbStandard);
+            this.pnlFormulaire.Controls.Add(this.lblAbo);
+            this.pnlFormulaire.Controls.Add(this.btnUpdate);
+            this.pnlFormulaire.Controls.Add(this.tbxAdresseFactu);
+            this.pnlFormulaire.Controls.Add(this.label5);
+            this.pnlFormulaire.Controls.Add(this.tbxConfMdp);
             this.pnlFormulaire.Controls.Add(this.lblPrenom);
+            this.pnlFormulaire.Controls.Add(this.tbxPrenom);
+            this.pnlFormulaire.Controls.Add(this.lblId);
+            this.pnlFormulaire.Controls.Add(this.tbxMdp);
             this.pnlFormulaire.Controls.Add(this.lblMdp);
+            this.pnlFormulaire.Controls.Add(this.tbxNom);
+            this.pnlFormulaire.Controls.Add(this.tbxNomFactu);
             this.pnlFormulaire.Controls.Add(this.lblConfMdp);
             this.pnlFormulaire.Location = new System.Drawing.Point(204, 112);
             this.pnlFormulaire.Name = "pnlFormulaire";
             this.pnlFormulaire.Size = new System.Drawing.Size(709, 404);
             this.pnlFormulaire.TabIndex = 57;
             this.pnlFormulaire.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlFormulaire_Paint);
-            // 
-            // tbxNomFactu
-            // 
-            this.tbxNomFactu.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbxNomFactu.Location = new System.Drawing.Point(327, 246);
-            this.tbxNomFactu.Name = "tbxNomFactu";
-            this.tbxNomFactu.Size = new System.Drawing.Size(155, 20);
-            this.tbxNomFactu.TabIndex = 1;
             // 
             // label5
             // 
@@ -297,64 +327,13 @@
             this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.label5.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.label5.Location = new System.Drawing.Point(215, 246);
+            this.label5.Location = new System.Drawing.Point(219, 249);
             this.label5.Name = "label5";
             this.label5.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.label5.Size = new System.Drawing.Size(109, 18);
-            this.label5.TabIndex = 0;
+            this.label5.TabIndex = 14;
             this.label5.Text = "Nom &facturation";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // lblNom
-            // 
-            this.lblNom.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblNom.AutoSize = true;
-            this.lblNom.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.lblNom.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNom.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.lblNom.Location = new System.Drawing.Point(215, 29);
-            this.lblNom.Name = "lblNom";
-            this.lblNom.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lblNom.Size = new System.Drawing.Size(38, 18);
-            this.lblNom.TabIndex = 0;
-            this.lblNom.Text = "&Nom";
-            this.lblNom.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // lblId
-            // 
-            this.lblId.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblId.AutoSize = true;
-            this.lblId.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.lblId.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblId.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.lblId.Location = new System.Drawing.Point(215, 91);
-            this.lblId.Name = "lblId";
-            this.lblId.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lblId.Size = new System.Drawing.Size(73, 18);
-            this.lblId.TabIndex = 4;
-            this.lblId.Text = "&Identifiant";
-            this.lblId.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // lblPrenom
-            // 
-            this.lblPrenom.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblPrenom.AutoSize = true;
-            this.lblPrenom.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.lblPrenom.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPrenom.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.lblPrenom.Location = new System.Drawing.Point(215, 60);
-            this.lblPrenom.Name = "lblPrenom";
-            this.lblPrenom.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lblPrenom.Size = new System.Drawing.Size(57, 18);
-            this.lblPrenom.TabIndex = 2;
-            this.lblPrenom.Text = "&Prénom";
-            this.lblPrenom.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lblMdp
             // 
@@ -365,7 +344,7 @@
             this.lblMdp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.lblMdp.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMdp.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.lblMdp.Location = new System.Drawing.Point(215, 122);
+            this.lblMdp.Location = new System.Drawing.Point(219, 125);
             this.lblMdp.Name = "lblMdp";
             this.lblMdp.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lblMdp.Size = new System.Drawing.Size(91, 18);
@@ -382,13 +361,185 @@
             this.lblConfMdp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.lblConfMdp.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblConfMdp.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.lblConfMdp.Location = new System.Drawing.Point(215, 153);
+            this.lblConfMdp.Location = new System.Drawing.Point(219, 156);
             this.lblConfMdp.Name = "lblConfMdp";
             this.lblConfMdp.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lblConfMdp.Size = new System.Drawing.Size(89, 18);
             this.lblConfMdp.TabIndex = 8;
             this.lblConfMdp.Text = "&Confirmation";
             this.lblConfMdp.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblId
+            // 
+            this.lblId.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblId.AutoSize = true;
+            this.lblId.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.lblId.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblId.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.lblId.Location = new System.Drawing.Point(219, 94);
+            this.lblId.Name = "lblId";
+            this.lblId.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblId.Size = new System.Drawing.Size(73, 18);
+            this.lblId.TabIndex = 4;
+            this.lblId.Text = "&Identifiant";
+            this.lblId.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblPrenom
+            // 
+            this.lblPrenom.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblPrenom.AutoSize = true;
+            this.lblPrenom.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.lblPrenom.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPrenom.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.lblPrenom.Location = new System.Drawing.Point(219, 63);
+            this.lblPrenom.Name = "lblPrenom";
+            this.lblPrenom.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblPrenom.Size = new System.Drawing.Size(57, 18);
+            this.lblPrenom.TabIndex = 2;
+            this.lblPrenom.Text = "&Prénom";
+            this.lblPrenom.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblNom
+            // 
+            this.lblNom.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblNom.AutoSize = true;
+            this.lblNom.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.lblNom.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNom.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.lblNom.Location = new System.Drawing.Point(219, 32);
+            this.lblNom.Name = "lblNom";
+            this.lblNom.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblNom.Size = new System.Drawing.Size(38, 18);
+            this.lblNom.TabIndex = 0;
+            this.lblNom.Text = "&Nom";
+            this.lblNom.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // tbxId
+            // 
+            this.tbxId.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tbxId.Location = new System.Drawing.Point(341, 94);
+            this.tbxId.Name = "tbxId";
+            this.tbxId.Size = new System.Drawing.Size(155, 20);
+            this.tbxId.TabIndex = 5;
+            // 
+            // tbxAdresseFactu
+            // 
+            this.tbxAdresseFactu.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tbxAdresseFactu.Location = new System.Drawing.Point(341, 222);
+            this.tbxAdresseFactu.Name = "tbxAdresseFactu";
+            this.tbxAdresseFactu.Size = new System.Drawing.Size(155, 20);
+            this.tbxAdresseFactu.TabIndex = 13;
+            // 
+            // tbxConfMdp
+            // 
+            this.tbxConfMdp.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tbxConfMdp.Location = new System.Drawing.Point(341, 156);
+            this.tbxConfMdp.Name = "tbxConfMdp";
+            this.tbxConfMdp.Size = new System.Drawing.Size(155, 20);
+            this.tbxConfMdp.TabIndex = 9;
+            // 
+            // tbxPrenom
+            // 
+            this.tbxPrenom.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tbxPrenom.Location = new System.Drawing.Point(341, 63);
+            this.tbxPrenom.Name = "tbxPrenom";
+            this.tbxPrenom.Size = new System.Drawing.Size(155, 20);
+            this.tbxPrenom.TabIndex = 3;
+            // 
+            // tbxMdp
+            // 
+            this.tbxMdp.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tbxMdp.Location = new System.Drawing.Point(341, 125);
+            this.tbxMdp.Name = "tbxMdp";
+            this.tbxMdp.Size = new System.Drawing.Size(155, 20);
+            this.tbxMdp.TabIndex = 7;
+            // 
+            // tbxNom
+            // 
+            this.tbxNom.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tbxNom.Location = new System.Drawing.Point(341, 32);
+            this.tbxNom.Name = "tbxNom";
+            this.tbxNom.Size = new System.Drawing.Size(155, 20);
+            this.tbxNom.TabIndex = 1;
+            // 
+            // tbxNomFactu
+            // 
+            this.tbxNomFactu.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tbxNomFactu.Location = new System.Drawing.Point(341, 249);
+            this.tbxNomFactu.Name = "tbxNomFactu";
+            this.tbxNomFactu.Size = new System.Drawing.Size(155, 20);
+            this.tbxNomFactu.TabIndex = 15;
+            // 
+            // lblInfosAbo
+            // 
+            this.lblInfosAbo.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblInfosAbo.AutoSize = true;
+            this.lblInfosAbo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.lblInfosAbo.Font = new System.Drawing.Font("Calibri", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblInfosAbo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.lblInfosAbo.Location = new System.Drawing.Point(338, 202);
+            this.lblInfosAbo.Name = "lblInfosAbo";
+            this.lblInfosAbo.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblInfosAbo.Size = new System.Drawing.Size(156, 15);
+            this.lblInfosAbo.TabIndex = 11;
+            this.lblInfosAbo.Text = "informations a&bonnements";
+            this.lblInfosAbo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblAdresse
+            // 
+            this.lblAdresse.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblAdresse.AutoSize = true;
+            this.lblAdresse.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.lblAdresse.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAdresse.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.lblAdresse.Location = new System.Drawing.Point(219, 224);
+            this.lblAdresse.Name = "lblAdresse";
+            this.lblAdresse.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblAdresse.Size = new System.Drawing.Size(58, 18);
+            this.lblAdresse.TabIndex = 12;
+            this.lblAdresse.Text = "&Adresse";
+            this.lblAdresse.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblAbo
+            // 
+            this.lblAbo.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblAbo.AutoSize = true;
+            this.lblAbo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.lblAbo.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAbo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.lblAbo.Location = new System.Drawing.Point(218, 196);
+            this.lblAbo.Name = "lblAbo";
+            this.lblAbo.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblAbo.Size = new System.Drawing.Size(114, 23);
+            this.lblAbo.TabIndex = 10;
+            this.lblAbo.Text = "Abonnement";
+            this.lblAbo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label2
             // 
@@ -399,11 +550,11 @@
             this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.label2.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.LimeGreen;
-            this.label2.Location = new System.Drawing.Point(585, 464);
+            this.label2.Location = new System.Drawing.Point(390, 363);
             this.label2.Name = "label2";
             this.label2.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.label2.Size = new System.Drawing.Size(55, 23);
-            this.label2.TabIndex = 79;
+            this.label2.TabIndex = 21;
             this.label2.Text = "à jour";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
@@ -416,32 +567,13 @@
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.label1.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.label1.Location = new System.Drawing.Point(440, 464);
+            this.label1.Location = new System.Drawing.Point(245, 363);
             this.label1.Name = "label1";
             this.label1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.label1.Size = new System.Drawing.Size(139, 23);
-            this.label1.TabIndex = 78;
+            this.label1.TabIndex = 20;
             this.label1.Text = "Statut Paiement";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // lblInfosAbo
-            // 
-            this.lblInfosAbo.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblInfosAbo.AutoSize = true;
-            this.lblInfosAbo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.lblInfosAbo.Font = new System.Drawing.Font("Calibri", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblInfosAbo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.lblInfosAbo.Location = new System.Drawing.Point(538, 309);
-            this.lblInfosAbo.Name = "lblInfosAbo";
-            this.lblInfosAbo.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lblInfosAbo.Size = new System.Drawing.Size(156, 15);
-            this.lblInfosAbo.TabIndex = 10;
-            this.lblInfosAbo.Text = "informations a&bonnements";
-            this.lblInfosAbo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.lblInfosAbo.MouseLeave += new System.EventHandler(this.lbl_MouseLeave);
-            this.lblInfosAbo.MouseHover += new System.EventHandler(this.lbl_MouseHover);
             // 
             // rbDeluxe
             // 
@@ -449,10 +581,10 @@
             this.rbDeluxe.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.rbDeluxe.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbDeluxe.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.rbDeluxe.Location = new System.Drawing.Point(610, 384);
+            this.rbDeluxe.Location = new System.Drawing.Point(415, 283);
             this.rbDeluxe.Name = "rbDeluxe";
             this.rbDeluxe.Size = new System.Drawing.Size(64, 17);
-            this.rbDeluxe.TabIndex = 15;
+            this.rbDeluxe.TabIndex = 18;
             this.rbDeluxe.TabStop = true;
             this.rbDeluxe.Text = "Delu&xe";
             this.rbDeluxe.UseVisualStyleBackColor = false;
@@ -463,12 +595,12 @@
             this.rbPremium.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.rbPremium.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbPremium.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.rbPremium.Location = new System.Drawing.Point(524, 384);
+            this.rbPremium.Location = new System.Drawing.Point(329, 283);
             this.rbPremium.Name = "rbPremium";
             this.rbPremium.Size = new System.Drawing.Size(72, 17);
-            this.rbPremium.TabIndex = 14;
+            this.rbPremium.TabIndex = 17;
             this.rbPremium.TabStop = true;
-            this.rbPremium.Text = "&Premium";
+            this.rbPremium.Text = "Pr&emium";
             this.rbPremium.UseVisualStyleBackColor = false;
             // 
             // rbStandard
@@ -477,112 +609,17 @@
             this.rbStandard.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.rbStandard.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbStandard.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.rbStandard.Location = new System.Drawing.Point(435, 384);
+            this.rbStandard.Location = new System.Drawing.Point(240, 283);
             this.rbStandard.Name = "rbStandard";
             this.rbStandard.Size = new System.Drawing.Size(76, 17);
-            this.rbStandard.TabIndex = 13;
+            this.rbStandard.TabIndex = 16;
             this.rbStandard.TabStop = true;
             this.rbStandard.Text = "&Standard";
             this.rbStandard.UseVisualStyleBackColor = false;
             // 
-            // lblAdresse
-            // 
-            this.lblAdresse.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblAdresse.AutoSize = true;
-            this.lblAdresse.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.lblAdresse.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAdresse.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.lblAdresse.Location = new System.Drawing.Point(419, 331);
-            this.lblAdresse.Name = "lblAdresse";
-            this.lblAdresse.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lblAdresse.Size = new System.Drawing.Size(58, 18);
-            this.lblAdresse.TabIndex = 11;
-            this.lblAdresse.Text = "&Adresse";
-            this.lblAdresse.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // tbxAdresseFactu
-            // 
-            this.tbxAdresseFactu.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbxAdresseFactu.Location = new System.Drawing.Point(531, 329);
-            this.tbxAdresseFactu.Name = "tbxAdresseFactu";
-            this.tbxAdresseFactu.Size = new System.Drawing.Size(155, 20);
-            this.tbxAdresseFactu.TabIndex = 12;
-            // 
-            // lblAbo
-            // 
-            this.lblAbo.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblAbo.AutoSize = true;
-            this.lblAbo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.lblAbo.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAbo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.lblAbo.Location = new System.Drawing.Point(418, 303);
-            this.lblAbo.Name = "lblAbo";
-            this.lblAbo.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lblAbo.Size = new System.Drawing.Size(114, 23);
-            this.lblAbo.TabIndex = 69;
-            this.lblAbo.Text = "Abonnement";
-            this.lblAbo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // tbxConfMdp
-            // 
-            this.tbxConfMdp.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbxConfMdp.Location = new System.Drawing.Point(531, 263);
-            this.tbxConfMdp.Name = "tbxConfMdp";
-            this.tbxConfMdp.Size = new System.Drawing.Size(155, 20);
-            this.tbxConfMdp.TabIndex = 9;
-            // 
-            // tbxMdp
-            // 
-            this.tbxMdp.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbxMdp.Location = new System.Drawing.Point(531, 232);
-            this.tbxMdp.Name = "tbxMdp";
-            this.tbxMdp.Size = new System.Drawing.Size(155, 20);
-            this.tbxMdp.TabIndex = 7;
-            // 
-            // tbxPrenom
-            // 
-            this.tbxPrenom.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbxPrenom.Location = new System.Drawing.Point(531, 170);
-            this.tbxPrenom.Name = "tbxPrenom";
-            this.tbxPrenom.Size = new System.Drawing.Size(155, 20);
-            this.tbxPrenom.TabIndex = 3;
-            // 
-            // tbxId
-            // 
-            this.tbxId.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbxId.Location = new System.Drawing.Point(531, 201);
-            this.tbxId.Name = "tbxId";
-            this.tbxId.Size = new System.Drawing.Size(155, 20);
-            this.tbxId.TabIndex = 5;
-            // 
-            // tbxNom
-            // 
-            this.tbxNom.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbxNom.Location = new System.Drawing.Point(531, 139);
-            this.tbxNom.Name = "tbxNom";
-            this.tbxNom.Size = new System.Drawing.Size(155, 20);
-            this.tbxNom.TabIndex = 1;
-            // 
             // btnUpdate
             // 
-            this.btnUpdate.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.btnUpdate.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btnUpdate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.btnUpdate.FlatAppearance.BorderSize = 0;
@@ -590,34 +627,12 @@
             this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUpdate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.btnUpdate.Location = new System.Drawing.Point(438, 428);
+            this.btnUpdate.Location = new System.Drawing.Point(243, 327);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(229, 22);
-            this.btnUpdate.TabIndex = 16;
+            this.btnUpdate.TabIndex = 19;
             this.btnUpdate.Text = "Mettre à &jour informations de compte";
             this.btnUpdate.UseVisualStyleBackColor = false;
-            // 
-            // picLogo
-            // 
-            this.picLogo.Image = global::PlayCan.Properties.Resources.playcan;
-            this.picLogo.Location = new System.Drawing.Point(23, 22);
-            this.picLogo.Name = "picLogo";
-            this.picLogo.Size = new System.Drawing.Size(83, 97);
-            this.picLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picLogo.TabIndex = 2;
-            this.picLogo.TabStop = false;
-            // 
-            // picFestival
-            // 
-            this.picFestival.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.picFestival.Image = global::PlayCan.Properties.Resources.Sans_titre___1;
-            this.picFestival.Location = new System.Drawing.Point(0, 0);
-            this.picFestival.Name = "picFestival";
-            this.picFestival.Size = new System.Drawing.Size(709, 108);
-            this.picFestival.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picFestival.TabIndex = 0;
-            this.picFestival.TabStop = false;
             // 
             // frmParametres
             // 
@@ -625,21 +640,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(916, 523);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.lblInfosAbo);
-            this.Controls.Add(this.rbDeluxe);
-            this.Controls.Add(this.rbPremium);
-            this.Controls.Add(this.rbStandard);
-            this.Controls.Add(this.lblAdresse);
-            this.Controls.Add(this.tbxAdresseFactu);
-            this.Controls.Add(this.lblAbo);
-            this.Controls.Add(this.tbxConfMdp);
-            this.Controls.Add(this.tbxMdp);
-            this.Controls.Add(this.tbxPrenom);
-            this.Controls.Add(this.tbxId);
-            this.Controls.Add(this.tbxNom);
-            this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.pnlFormulaire);
             this.Controls.Add(this.pnlMenu);
             this.Controls.Add(this.pnlInfosMusique);
@@ -653,13 +653,12 @@
             this.pnlMenu.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgInfosMusiques)).EndInit();
             this.pnlLogo.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.picLogo)).EndInit();
             this.pnlInfosMusique.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.picFestival)).EndInit();
             this.pnlFormulaire.ResumeLayout(false);
             this.pnlFormulaire.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picLogo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picFestival)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -681,26 +680,26 @@
         private System.Windows.Forms.Label lblDeconnexion;
         private System.Windows.Forms.Panel pnlFormulaire;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lblInfosAbo;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox tbxId;
         private System.Windows.Forms.RadioButton rbDeluxe;
-        private System.Windows.Forms.RadioButton rbPremium;
-        private System.Windows.Forms.RadioButton rbStandard;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox tbxNomFactu;
         private System.Windows.Forms.Label lblAdresse;
-        private System.Windows.Forms.TextBox tbxAdresseFactu;
+        private System.Windows.Forms.RadioButton rbPremium;
+        private System.Windows.Forms.Label lblNom;
+        private System.Windows.Forms.RadioButton rbStandard;
         private System.Windows.Forms.Label lblAbo;
-        private System.Windows.Forms.Label lblConfMdp;
+        private System.Windows.Forms.Button btnUpdate;
+        private System.Windows.Forms.TextBox tbxAdresseFactu;
+        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox tbxConfMdp;
-        private System.Windows.Forms.Label lblMdp;
-        private System.Windows.Forms.TextBox tbxMdp;
         private System.Windows.Forms.Label lblPrenom;
         private System.Windows.Forms.TextBox tbxPrenom;
         private System.Windows.Forms.Label lblId;
-        private System.Windows.Forms.TextBox tbxId;
-        private System.Windows.Forms.Label lblNom;
+        private System.Windows.Forms.TextBox tbxMdp;
+        private System.Windows.Forms.Label lblMdp;
         private System.Windows.Forms.TextBox tbxNom;
-        private System.Windows.Forms.Button btnUpdate;
+        private System.Windows.Forms.TextBox tbxNomFactu;
+        private System.Windows.Forms.Label lblConfMdp;
     }
 }

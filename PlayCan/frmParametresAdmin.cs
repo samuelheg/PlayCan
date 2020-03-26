@@ -31,18 +31,19 @@ namespace PlayCan
         private void lblAccueil_Click(object sender, EventArgs e)
         {
             this.Close();
-            frmAccueilAdmin.getFrmAccueilAdmin().Show();
         }
 
         private void lblAbonnements_Click(object sender, EventArgs e)
         {
-            this.Close();
+            parametres = null;
+            this.Dispose();
             frmGestionAbonnements.getGestionnaireAbonnements().Show();
         }
 
         private void lblMusique_Click(object sender, EventArgs e)
         {
-            this.Close();
+            parametres = null;
+            this.Dispose();
             frmGestionnaireMusique.getGestionnaireMusique().Show();
         }
 
@@ -75,6 +76,13 @@ namespace PlayCan
         private void frmParametresAdmin_FormClosed(object sender, FormClosedEventArgs e)
         {
             parametres = null;
+            frmAccueilAdmin.getFrmAccueilAdmin().Show();
+
+        }
+
+        private void pnlFormulaire_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

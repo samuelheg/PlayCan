@@ -80,13 +80,13 @@ namespace PlayCan
         private void lblAbonnements_Click(object sender, EventArgs e)
         {
             this.Hide();
-            frmGestionAbonnements.getGestionnaireAbonnements().ShowDialog();
+            frmGestionAbonnements.getGestionnaireAbonnements().Show();
         }
 
         private void lblMusique_Click(object sender, EventArgs e)
         {
             this.Hide();
-            frmGestionnaireMusique.getGestionnaireMusique().ShowDialog();
+            frmGestionnaireMusique.getGestionnaireMusique().Show();
         }
 
         private void lblParametres_Click(object sender, EventArgs e)
